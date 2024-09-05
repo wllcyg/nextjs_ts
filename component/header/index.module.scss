@@ -1,0 +1,17 @@
+.header {
+  padding: 60px 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .link{
+    align-items: baseline;
+  }
+  img {
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+  }
+  .li{
+    margin-left: 12px;
+  }
+}
