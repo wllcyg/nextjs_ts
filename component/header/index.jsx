@@ -1,10 +1,13 @@
 import logoImage from '@/assets/logo.jpg';
 import Link from "next/link";
+import Image from "next/image";
+
 import styles from '@/component/header/index.module.scss'
 const Index = () => {
+  // priority 调整图片优先级
   return (
     <header className={styles.header}>
-      <Link href="/" className={`flex ${styles.link} `}><img src={logoImage.src} alt="logo"/> <span className='self-end ml-2 font-bold'>Next Level Food</span> </Link>
+      <Link href="/" className={`flex ${styles.link} `}><Image src={logoImage} priority alt="logo"/> <span className='self-end ml-2 font-bold'>Next Level Food</span> </Link>
       <nav>
         <ul className='flex font-bold'>
           <li>
